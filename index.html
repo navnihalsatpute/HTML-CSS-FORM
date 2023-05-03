@@ -29,8 +29,6 @@
 		#form{
 			text-align: center;
 			width: 50%;
-			background:transparent;
-			backdrop-filter: blur(20px);
 			border: 2px solid white;
 			border-radius: 15px; 
 			margin: auto; 
@@ -45,6 +43,9 @@
 			color: black;
 			border: 1px solid white;
 			border-radius: 5px;
+		}
+		textarea{
+			resize: none;
 		}
 		select{
 			width: 15em; 
@@ -107,19 +108,51 @@
 
 		@media (max-width:300px){
 			*{
+				font-size: 10px;
+			}
+			h1{
 				font-size: 30px;
 			}
 			.input1{
-				width: 3em;
+				width: 10em;
 			}
 			.input2, .text, select{
-				width: 7em;
+				width: 13em;
+			}
+			.text{
+				width: 10em;
 			}
 			table{
 				display: none;
 			}
 			#pic{
-				width: 7em;
+				width: 13em;
+			}
+			#form{
+				width: 80%;
+			}
+		}
+		@media (min-width:300px) and (max-width:400px) {
+			*{
+				font-size: 15px;
+			}
+			h1{
+				font-size: 35px;
+			}
+			.input1{
+				width: 10em;
+			}
+			.input2, select, #pic{
+				width: 10em;
+			}
+			.text{
+				width: 13em;
+			}
+			table{
+				display: none;
+			}
+			#form{
+				width: 80%;
 			}
 		}
 
@@ -150,9 +183,9 @@
 
 				<label>Gender</label><br><br>
 				<div id="option">
-					<input type="radio" name="gender">Male
-					<input type="radio" name="gender">Female
-					<input type="radio" name="gender">Prefer not to say
+					<input type="radio" name="gender">Male<br>
+					<input type="radio" name="gender">Female<br>
+					<input type="radio" name="gender">Prefer not to say<br>
 				</div><br><br><br>
 			
 				<label>Tell us something about yourself</label><br>
