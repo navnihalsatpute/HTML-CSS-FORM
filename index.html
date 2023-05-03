@@ -14,7 +14,7 @@
 			color: white;
 		}
 		body{
-			background-image: linear-gradient(to bottom right, #04619F, #000000);
+			background-image: linear-gradient(to bottom right, #0C0C0C, #4834D4);
 		}
 
 		h1{
@@ -28,7 +28,7 @@
 		}
 		#form{
 			text-align: center;
-			width: 50%;
+			width: 80%;
 			border: 2px solid white;
 			border-radius: 15px; 
 			margin: auto; 
@@ -112,9 +112,10 @@
 			}
 			h1{
 				font-size: 30px;
+				letter-spacing: 2px;
 			}
 			.input1{
-				width: 13em;
+				width: 10em;
 			}
 			.input2, .text, select{
 				width: 13em;
@@ -122,14 +123,11 @@
 			.text{
 				width: 10em;
 			}
-			table{
+			table, #ref{
 				display: none;
 			}
 			#pic{
 				width: 13em;
-			}
-			#form{
-				width: 80%;
 			}
 		}
 		@media (min-width:300px) and (max-width:400px) {
@@ -138,6 +136,7 @@
 			}
 			h1{
 				font-size: 35px;
+				letter-spacing: 4px;
 			}
 			.input1{
 				width: 10em;
@@ -148,11 +147,28 @@
 			.text{
 				width: 13em;
 			}
-			table{
+			table, #ref{
 				display: none;
 			}
-			#form{
-				width: 80%;
+		}
+		@media (min-width:400px) and (max-width:800px) {
+			*{
+				font-size: 20px;
+			}
+			h1{
+				font-size: 40px;
+			}
+			.input1{
+				width: 13em;
+			}
+			.input2, select, #pic{
+				width: 13em;
+			}
+			.text{
+				width: 15em;
+			}
+			table, #ref{
+				display: none;
 			}
 		}
 
@@ -203,7 +219,7 @@
 					<option value="other">Other</option>
 				</select> <br><br>
 
-				<label>Please give reference of any two people whom you feel:</label><br><br>
+				<label id="ref">Please give reference of any two people whom you feel:</label><br><br>
 				<table style="border: 1px solid white;">
 					<tr>
 						<th>S.no.</th>
