@@ -14,9 +14,7 @@
 			color: white;
 		}
 		body{
-			background-image: url("bg1.jpg");
-			background-size: cover;
-			background-attachment: fixed;
+			background-image: linear-gradient(to bottom right, #04619F, #000000);
 		}
 
 		h1{
@@ -101,10 +99,28 @@
 			color: floralwhite;
 		}
 		.container button:hover{
-			background-color: #9A208C;
+			background-color: #41209a;
 		}
 		.container button:active{
-			background-color: #E11299;
+			background-color: #001a8b;
+		}
+
+		@media (max-width:300px){
+			*{
+				font-size: 30px;
+			}
+			.input1{
+				width: 3em;
+			}
+			.input2, .text, select{
+				width: 7em;
+			}
+			table{
+				display: none;
+			}
+			#pic{
+				width: 7em;
+			}
 		}
 
 	</style>
@@ -143,7 +159,7 @@
 				<textarea cols="60" rows="8" class="text"></textarea><br><br>
 
 				<label>Select a profile photo</label><br>
-				<input type="file" accept=".jpg" style="margin: 10px;"><br><br>
+				<input type="file" accept=".jpg" style="margin: 10px;" id="pic"><br><br>
 
 				<label>How did you hear about us?</label><br>
 				<select>
